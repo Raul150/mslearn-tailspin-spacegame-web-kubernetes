@@ -1,7 +1,7 @@
 trigger:
 - 'main'
 pool:
-  vmImage: 'ubuntu-20.02'
+  vmImage: 'ubuntu-latest'
 variables:
   buildConfiguration: 'Release'
   leaderboardRepository: 'leaderboard'
