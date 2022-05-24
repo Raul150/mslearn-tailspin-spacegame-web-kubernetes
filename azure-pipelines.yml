@@ -1,7 +1,7 @@
 trigger:
 - 'main'
 pool:
-  vmImage: ''
+  vmImage: 'ubuntu-latest'
 variables:
   buildConfiguration: 'Release'
   leaderboardRepository: 'leaderboard'
@@ -42,7 +42,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-     vmImage: ''
+     vmImage: 'ubuntu-latest'
     environment: 'spike.default'
     variables:
     - group: Release
