@@ -49,7 +49,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-      vmImage: 'ubuntu-20.04'
+      vmImage: 'ubuntu-latest'
     environment: 'spike.default'
     variables:
     - group: Release
@@ -58,7 +58,7 @@ stages:
         deploy:
           steps:
           - download: current
-            artifact: manifests
+            artifact: manifests          
           - task: KubernetesManifest@0
             displayName: Create imagePullSecret
             inputs:
