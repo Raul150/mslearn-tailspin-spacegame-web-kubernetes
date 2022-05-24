@@ -2,14 +2,12 @@ trigger:
 - 'main'
 pool:
   vmImage: 'ubuntu-latest'
- 
 variables:
   buildConfiguration: 'Release'
   leaderboardRepository: 'leaderboard'
   webRepository: 'web'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'secret'
-
 stages:
 - stage: 'Build'
   displayName: 'Build and push'
