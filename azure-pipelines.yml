@@ -48,8 +48,8 @@ stages:
   jobs:
   - deployment: Deploy
     displayName: Deploy
-    pool:
-      vmImage: 'ubuntu-latest'
+pool:
+  vmImage: 'ubuntu-latest'
     environment: 'spike.default'
     variables:
     - group: Release
