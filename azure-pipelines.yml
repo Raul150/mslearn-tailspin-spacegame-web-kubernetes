@@ -42,7 +42,7 @@ stages:
   - deployment: Deploy
     displayName: Deploy
     pool:
-     vmImage: 'ubuntu-latest'
+     vmImage: ''
     environment: 'spike.default'
     variables:
     - group: Release
