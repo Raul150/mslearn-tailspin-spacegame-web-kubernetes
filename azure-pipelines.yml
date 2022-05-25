@@ -56,7 +56,7 @@ stages:
             displayName: Create imagePullSecret
             inputs:
               action: 'createSecret'
-              kubernetesServiceConnection: 'spike-tailspinspacegame-3242-default-1653415166891'
+              kubernetesServiceConnection: 'spike-tailspinspacegame-10714-default-1653415166891'
               namespace: 'default'
               secretType: 'dockerRegistry'
               secretName: '$(imagePullSecret)'
